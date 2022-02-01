@@ -144,11 +144,13 @@ body {
   
   form {
     margin: 0 0 40px 0;
+    text-align: center;
   }
   
   .input-section {
     margin: 20px 0;
     display: flex;
+    justify-content: space-evenly;
   }
   .input-group {
     display: flex;
@@ -232,5 +234,19 @@ body {
       padding: 10px;
       background-color: transparent;
     }
+  }
+
+  .telefon {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  .info1 {
+    margin: 0 0 40px 0;
+    justify-content: space-evenly;
+  }
+
+  .info2 {
+    text-align: center;
   }
   

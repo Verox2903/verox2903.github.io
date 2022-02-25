@@ -5,7 +5,7 @@
 		<html lang="pl">
 		<meta charset="utf-8">
 		<title>Kontakt</title>
-        <link rel="shortcut icon" type="image/png" href="../src/f.png"/>
+        <link rel="shortcut icon" type="image/png" href=""/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -33,6 +33,17 @@
                 <div class="Social media">
                     <a href="sociale.html">Social media</a>
                 </div>
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+                <script>
+                    const body = document.querySelector('body');
+                    const toggle = document.getElementById('toggle');
+                    toggle.onclick = function(){
+                        toggle.classList.toggle('active');
+                        body.classList.toggle('active');
+                    }
+                </script>
             </div>
         </nav>
     </body>

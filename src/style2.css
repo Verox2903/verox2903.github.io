@@ -325,3 +325,21 @@ body.active h1
 {
     color: #484848;
 }
+
+@viewport
+{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport
+{
+    width: extend-to-zoom;
+    zoom: 1.0;;
+}
+
+@-o-viewport
+{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}

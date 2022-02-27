@@ -27,9 +27,8 @@ body.active
 .nav-up
 {
     width: 100%;
-    height: 120px;
+    height: 12%;
     display: flex;
-    align-items: center;
     font-size: 13.5px;
     position: relative;
 }
@@ -62,14 +61,13 @@ body.active .nav-up a:hover
 
 .fikliks
 {
-    width: 180px;
-    height: 120px;
+    width: 50%;
+    height: 100px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
+    justify-content: right;
     line-height: 2;
-    margin-left: 33%;
     position: relative;
+    margin-top: 1%;
 }
 
 .fikliks h2
@@ -78,6 +76,7 @@ body.active .nav-up a:hover
     position: absolute;
     color: #e0e0e0;
     transition: 0.5s;
+    margin-right: 2%;
 }
 
 body.active .fikliks h2
@@ -94,6 +93,7 @@ body.active .fikliks h2
     position: absolute;
     color: #eaeaea;
     transition: 0.5s;
+    margin-right: 1.8%;
 }
 
 body.active .fikliks h3
@@ -106,14 +106,20 @@ body.active .fikliks h3
 
 .nav-bar
 {
-    width: 600px;
+    width: 50%;
     height: 100px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: flex-end;
     font-size: 16px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 1%;
+}
+
+.nav-bar div
+{
+    margin-left: 1.8%;
+    margin-bottom: 1%;
 }
 
 .glowne
@@ -124,6 +130,7 @@ body.active .fikliks h3
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .pod
@@ -140,52 +147,52 @@ body.active .fikliks h3
 .twitch
 {
     position: absolute;
-    margin-bottom: 600px;
+    margin-bottom: 100%;
 }
 
 .steam
 {
     position: absolute;
-    margin-top: 600px;
+    margin-top: 100%;
 }
 
 .tt
 {
     position: absolute;
-    margin-left: 600px;
+    margin-left: 100%;
 }
 
 .insta
 {
     position: absolute;
-    margin-right: 600px;
+    margin-right: 100%;
 }
 
 .tekst
 {
     font-family: 'Lobster', cursive;
     position: absolute;
-    height: 95px;
-    margin-bottom: 51px;
-    width: 145px;
+    height: 16%;
+    margin-bottom: 8%;
+    width: 24%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 31px;
+    font-size: 220%;
 }
 
 .strzalka1
 {
     position: absolute;
     margin-bottom: 350px;
-    width: 100px;
     transform: rotate(180deg);
+    width: 16%;
 }
 
 .strzalka2
 {
     position: absolute;
-    width: 100px;
+    width: 16%;
     margin-right: 350px;
     transform: rotate(90deg);
 }
@@ -193,7 +200,7 @@ body.active .fikliks h3
 .strzalka3
 {
     position: absolute;
-    width: 100px;
+    width: 16%;
     margin-left: 350px;
     transform: rotate(-90deg);
 }
@@ -201,7 +208,7 @@ body.active .fikliks h3
 .strzalka4
 {
     position: absolute;
-    width: 100px;
+    width: 16%;
     margin-top: 350px;
 }
 

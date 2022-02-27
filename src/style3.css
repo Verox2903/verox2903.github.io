@@ -29,6 +29,7 @@ body.active
     display: flex;
     font-size: 13.5px;
     position: relative;
+    align-items: flex-end;
 }
 
 .nav-up a
@@ -59,13 +60,15 @@ body.active .nav-up a:hover
 
 .fikliks
 {
-    width: 50%;
+    width: 40%;
     height: 100px;
     display: flex;
     justify-content: right;
     line-height: 2;
     position: relative;
     margin-top: 1%;
+    margin-left: 2%;
+    flex-wrap: wrap-reverse;
 }
 
 .fikliks h2
@@ -74,7 +77,7 @@ body.active .nav-up a:hover
     position: absolute;
     color: #e0e0e0;
     transition: 0.5s;
-    margin-right: 2%;
+    margin-right: 5%;
 }
 
 body.active .fikliks h2
@@ -91,7 +94,8 @@ body.active .fikliks h2
     position: absolute;
     color: #eaeaea;
     transition: 0.5s;
-    margin-right: 1.8%;
+    margin-right: 4.5%;
+    margin-top: 6%;
 }
 
 body.active .fikliks h3
@@ -119,6 +123,7 @@ body.active .fikliks h3
     margin-left: 1.8%;
     margin-bottom: 1%;
 }
+
 #toggle
 {
     position: relative;

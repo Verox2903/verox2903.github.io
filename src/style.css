@@ -133,7 +133,7 @@ body.active .fikliks h3
     margin-top: 75px;
     margin-left: 0;
     width: 50%;
-    height: 280px;
+    height: 50%;
 }
 
 .zdj-glowne img
@@ -219,15 +219,15 @@ body.active .dalej
     display: block;
     width: 50px;
     height: 25px;
-    border-radius: 160px;
+    border-radius: 25px;
     background: #222;
     transition: 0.5s;
     cursor: pointer;
     box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
                 inset 0 8px 8px rgba(0,0,0,0.1),
                 inset 0 -4px 4px rgba(0,0,0,0.1);
-    margin-right: 210px;
-    margin-top: 13px;
+    margin-left: 2%;
+    margin-top: 4%;
 }
 
 #toggle.active
@@ -263,24 +263,119 @@ body.active .dalej
     inset 0 -4px 4px rgba(255,255,255,1),;
 }
 
-@viewport
+/* @viewport
 {
     zoom: 1.0;
     width: extend-to-zoom;
+    min-width: 320px;
+    max-width: 412px;
+    user-zoom: 0;
 }
 
 @-ms-viewport
 {
-    width: extend-to-zoom;
-    zoom: 1.0;;
-}
-
-@-o-viewport
-{
     zoom: 1.0;
     width: extend-to-zoom;
-}
+    min-width: 320px;
+    max-width: 412px;
+    user-zoom: 0;
+} */
 
-@media screen {
+@media all and (max-width: 413px) {
+    .nav-up {
     
+    width: 100%;
+    height: 12%;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    align-items: flex-end;
+    }
+
+    .fikliks {
+        margin: 0;
+        padding: 0;
+    }
+
+    .zdj-glowne
+    {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        margin-top: 40%;
+    }
+
+    .glowne
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 130%;
+    }
+
+    .przywitanie
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 5%;
+    }
+
+    .dalej
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 25%;
+    }
+
+    .nav-bar
+    {
+        width: 550%;
+        height: 250%;
+        position: absolute;
+        margin-left: 25%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        font-size: 16px;
+        margin-bottom: 20%;
+    }
+
+    .nav-bar div
+    {
+        width: 1%;
+        height: 50%;
+        margin-left: 1.9%;
+        margin-bottom: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-up
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 25%;
+    }
+
+    .fikliks
+    {
+        width: 50%;
+        height: 100%;
+        margin-right: 70%;
+    }
+
+    #toggle
+    {
+        transform: rotate(90deg); 
+        position: relative;
+        display: block;
+        margin-left: 0.5% !important;
+        margin-bottom: -2% !important;
+    }
 }

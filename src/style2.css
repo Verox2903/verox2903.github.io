@@ -374,6 +374,7 @@ body.active h1
     margin-bottom: 0 !important;
     margin-top: 0 !important;
     height: 150px !important;
+    z-index: 10;
     }
 
     .fikliks {
@@ -439,13 +440,35 @@ body.active h1
 
     .formularz
     {
-        margin-top: 100% !important;
+        margin-top: 170% !important;
         position: absolute !important;
+        width: 100%;
     }
 
     .h1-a
     {
         position: absolute !important;
         margin-top: 100%;
+    }
+
+    .imie
+    {
+        margin-bottom: 180% !important;
+    }
+
+    .mail
+    {
+        margin-bottom: 160% !important;
+    }
+
+    .wiadomosc
+    {
+        margin-bottom: 60% !important;
+    }
+
+    .wyslij
+    {
+        margin-bottom: 0% !important;
+        margin-top: 82% !important;
     }
 }

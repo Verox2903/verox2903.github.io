@@ -364,7 +364,116 @@ body.active h1
     color: #484848;
 }
 
-@media all and (max-width: 413px) {
+@media all and (min-width: 380px) {
+    .nav-up {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    position: absolute !important;
+    align-items: flex-end;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    height: 150px !important;
+    z-index: 10;
+    }
+
+    .fikliks {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar
+    {
+        width: 80% !important;
+        height: 100%;
+        position: absolute !important;
+        margin-left: 25%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        font-size: 16px;
+        margin-bottom: 0%;
+    }
+
+    .nav-bar div
+    {
+        width: 1%;
+        height: 75px;
+        margin-left: 18%;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .strona-glowna
+    {
+        margin-left: 11% !important;
+    }
+
+    .nav-up
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 0%;
+    }
+
+    .fikliks
+    {
+        width: 27%;
+        height: 100%;
+        position: absolute;
+        margin-bottom: 0%;
+    }
+
+    #toggle
+    {
+        transform: rotate(90deg); 
+        position: relative;
+        display: block;
+        margin-left: 6% !important;
+        margin-bottom: 10% !important;
+    }
+
+    .formularz
+    {
+        margin-top: 170% !important;
+        position: absolute !important;
+        width: 100%;
+    }
+
+    .h1-a
+    {
+        position: absolute !important;
+        margin-top: 100%;
+    }
+
+    .imie
+    {
+        margin-bottom: 180% !important;
+    }
+
+    .mail
+    {
+        margin-bottom: 160% !important;
+    }
+
+    .wiadomosc
+    {
+        margin-bottom: 60% !important;
+    }
+
+    .wyslij
+    {
+        margin-bottom: 0% !important;
+        margin-top: 82% !important;
+    }
+}
+
+@media all and (max-width: 320px) {
     .nav-up {
     width: 100%;
     display: flex;

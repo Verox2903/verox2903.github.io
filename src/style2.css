@@ -364,7 +364,7 @@ body.active h1
     color: #484848;
 }
 
-@media all and (min-width: 380px) {
+@media all and (max-width: 380px) {
     .nav-up {
     width: 100%;
     display: flex;

@@ -374,3 +374,214 @@ body.active .tekst
 {
     color: black;
 }
+
+@media all and (max-width: 413px) {
+    .nav-up {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    }
+
+    .fikliks {
+        margin: 0;
+        padding: 0;
+    }
+
+    .zdj-glowne
+    {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        margin-top: 40%;
+    }
+
+    .glowne
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 130%;
+    }
+
+    .przywitanie
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 5%;
+    }
+
+    .dalej
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 25%;
+    }
+
+    .nav-bar
+    {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        margin-left: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        font-size: 16px;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+
+    .nav-bar div
+    {
+        width: 1%;
+        height: 50%;
+        margin-left: 18%;
+        margin-bottom: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-up
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 25%;
+    }
+
+    .fikliks
+    {
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        margin-bottom: 5%;
+        margin-right: 70%;
+    }
+
+    #toggle
+    {
+        transform: rotate(90deg); 
+        position: relative;
+        display: block;
+        margin-left: 5% !important;
+        margin-bottom: -10% !important;
+    }
+
+    .glowne
+    {
+        width: 100%;
+        height: 400px;
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .monitor
+    {
+        margin-top: 50%;
+        align-items: center;
+    }
+
+    .monitor1
+    {
+        margin-top: 50%;
+        align-items: center;
+    }
+
+    .tekst
+    {
+        margin-top: 45%;
+    }
+
+    .twitch
+    {
+        position: absolute;
+        margin-right: 80%;
+    }
+
+    .steam
+    {
+        position: absolute;
+        margin-right: 30%;
+        margin-bottom: 200%;
+    }
+
+    .tt
+    {
+        position: absolute;
+        margin-right: 75%;
+        margin-bottom: 100%;
+    }
+
+    .insta
+    {
+        position: absolute;
+        margin-left: 180%;
+        margin-bottom: 100%;
+    }
+
+    .strzalka1
+    {
+        position: absolute;
+        margin-right: 69%;
+        margin-bottom: 45%;
+    }
+    .strzalka2
+    {
+        position: absolute;
+        margin-right: 19%;
+        margin-bottom: 45%;
+        transform: rotate(180deg);
+    }
+    .strzalka3
+    {
+        position: absolute;
+        margin-left: 35%;
+        margin-bottom: 45%;
+        transform: rotate(180deg);
+    }
+    .strzalka4
+    {
+        position: absolute;
+        margin-left: 91%;
+        margin-bottom: 140%;
+        transform: rotate(180deg);
+    }
+    .strzalka5
+    {
+        position: absolute;
+        margin-right: 69%;
+        margin-bottom: 45%;
+    }
+    .strzalka6
+    {
+        position: absolute;
+        margin-right: 19%;
+        margin-bottom: 45%;
+        transform: rotate(180deg);
+    }
+    .strzalka7
+    {
+        position: absolute;
+        margin-left: 35%;
+        margin-bottom: 45%;
+        transform: rotate(180deg);
+    }
+    .strzalka8
+    {
+        position: absolute;
+        margin-left: 91%;
+        margin-bottom: 140%;
+        transform: rotate(180deg);
+    }
+}

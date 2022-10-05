@@ -285,6 +285,7 @@ body.active .fikliks h3
 
 .h1-a
 {
+    position: absolute;
     text-align: center;
     width: 150px;
     height: 130px;
@@ -293,7 +294,7 @@ body.active .fikliks h3
     align-items: center;
     text-align: center;
     position: fixed;
-    margin-bottom: 500px;
+    margin-top: 50px;
     color: #e0e0e0
 }
 

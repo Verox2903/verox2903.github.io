@@ -87,6 +87,7 @@ body
 
 .tekst-jeden p
 {
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     flex-wrap: wrap;
     visibility: collapse;
@@ -290,6 +291,7 @@ body
 
 .tekst-trzy
 {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-wrap: wrap;
     position: absolute;

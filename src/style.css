@@ -191,6 +191,7 @@ body
 
 .tekst-dwa p
 {
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     flex-wrap: wrap;
     visibility: collapse;
@@ -217,7 +218,6 @@ body
     align-items: center;
     justify-content: flex-start;
     height: fit-content;
-    width: 50%;
     position: relative;
     visibility: visible;
 }

@@ -4,58 +4,105 @@
         <link rel="stylesheet" href="src/style.css">
 		<html lang="pl">
 		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, shrink-to-fit=no, user-scalable=no">
-		<title>Fikliks</title>
-        <link rel="shortcut icon" type="image/png" href="src/f.png"/>
+		<title>Project</title>
+        <link rel="shortcut icon" type="image/png" href=""/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <meta name="keywords" content="Projekt, Szkoła, Angielski"/>
+        <meta name="author" content="Szymon Klotz, Emilia Michałkiewicz, Filip Krzeszewski" />
+        <meta name="copyright" content="Grupa projektowa" />
     </head>
     <body>
-        <nav class="nav-up">
-            <div class="fikliks">
-            <h2>Fikliks</h2>
-            <h3>Twitch Streamer</h3>
-            </div>
-            <div class="nav-bar">
-                <div class="Strona główna">
-                    <a href="index.html">Stona główna</a>
-                </div>
-                <div class="kontakt">
-                    <a href="Strony/kontakt.html">Kontakt</a>
-                </div>
-                <div class="O mnie">
-                <a href="Strony/omnie.html">O mnie</a>
-                </div>
-                <div class="Social media">
-                    <a href="Strony/sociale.html">Social media</a>
-                </div>
-                <div id="toggle">
-                    <i class="indicator"></i>
-                </div>
-                <script>
-                    const body = document.querySelector('body');
-                    const toggle = document.getElementById('toggle');
-                    toggle.onclick = function(){
-                        toggle.classList.toggle('active');
-                        body.classList.toggle('active');
-                    }
-                </script>
-            </div>
-        </nav>
-        <div class="zdj-glowne">
-            <img src="src/filip2.jpg"></img>
+        <div class="title1">
+            <p>Best places for eco-tourism destinations: </p>
         </div>
-        <div class="glowne">
-            <div class="przywitanie">
-                <h2>Witam,</h2>
-                <h3>trochę o mnie:</h3>
+        <div class="film">
+            <iframe width="560"
+                    height="315" 
+                    src="https://www.youtube.com/embed/pZMroQqepHk" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div id="jeden">
+            <div class="tytul-jeden">
+                <p class="tytul-jeden-txt">Hawaii</p>&nbsp;<button id="button1">➯</button>
+                    <script>
+                        const button1 = document.querySelector('button');
+                        const toggle1 = document.getElementById('jeden');
+                        toggle1.onclick = function(){
+                            toggle1.classList.toggle('active');
+                            body1.classList.toggle('active');
+                        }
+                    </script>
             </div>
-            <div class="dalej">
-                <p>Mam 17 lat. Twitchem zajmuję się od 04/21.</p>
+            <div class="tekst-jeden">
+                <p>bfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusd
+                    bvbbbfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbb
+                    bfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbbbfdubghd
+                    oifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbb
+                </p>
+            </div>
+            <div class="zdj-1">
+                <img>
+                <img>
+                <img>
+            </div>
+        </div>
+        <div id="dwa">
+            <div class="tytul-dwa">
+                <p class="tytul-dwa-txt">Norway</p>&nbsp;<button id="button2">➯</button>
+                    <script>
+                        const button2 = document.querySelector('button');
+                        const toggle2 = document.getElementById('dwa');
+                        toggle2.onclick = function(){
+                            toggle2.classList.toggle('active');
+                            body2.classList.toggle('active');
+                        }
+                    </script>
+            </div>
+            <div class="tekst-dwa">
+                <p>bfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusd
+                    bvbbbfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbb
+                    bfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbbbfdubghd
+                    oifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbb
+                </p>
+            </div>
+            <div class="zdj-2">
+                <img>
+                <img>
+                <img>
+            </div>
+        </div>
+        <div id="trzy">
+            <div class="tytul-trzy">
+                <p class="tytul-trzy-txt">Iceland</p>&nbsp;<button id="button3">➯</button>
+                    <script>
+                        const button3 = document.querySelector('button');
+                        const toggle3 = document.getElementById('trzy');
+                        toggle3.onclick = function(){
+                            toggle3.classList.toggle('active');
+                            body3.classList.toggle('active');
+                        }
+                    </script>
+            </div>
+            <div class="tekst-trzy">
+                <p>bfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusd
+                    bvbbbfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbb
+                    bfdubghdoifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbbbfdubghd
+                    oifbjniodnbondonbodncnbusdvuisbvuibxuivbhxbvhbxbvusdbvbb
+                </p>
+            </div>
+            <div class="zdj-3">
+                <img>
+                <img>
+                <img>
             </div>
         </div>
     </body>

@@ -325,7 +325,6 @@ body
     align-items: center;
     justify-content: flex-start;
     height: fit-content;
-    width: 50%;
     position: relative;
     visibility: visible;
 }

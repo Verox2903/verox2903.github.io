@@ -94,7 +94,7 @@ body
 
 #jeden.active .tekst-jeden
 {
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     position: relative;
     visibility: visible;
     width: 98%;
@@ -106,7 +106,7 @@ body
 
 #jeden.active .tekst-jeden p
 {
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
     display: flex;
     word-break: break-all;
     text-align: left;
@@ -199,7 +199,7 @@ body
 
 #dwa.active .tekst-dwa
 {
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     position: relative;
     visibility: visible;
     width: 98%;
@@ -211,7 +211,7 @@ body
 
 #dwa.active .tekst-dwa p
 {
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
     display: flex;
     word-break: break-all;
     text-align: left;
@@ -304,7 +304,7 @@ body
 
 #trzy.active .tekst-trzy
 {
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     position: relative;
     visibility: visible;
     width: 98%;
@@ -316,7 +316,7 @@ body
 
 #trzy.active .tekst-trzy p
 {
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
     display: flex;
     word-break: break-all;
     text-align: left;

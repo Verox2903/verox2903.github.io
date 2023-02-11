@@ -108,7 +108,7 @@ body
 
 #jeden.active .tekst-jeden p
 {
-    font-size: 20px;
+    font-size: 15px;
     transition: all 1.5s ease-in-out;
     display: flex;
     word-break: break-all;
@@ -217,7 +217,7 @@ body
 
 #dwa.active .tekst-dwa p
 {
-    font-size: 20px;
+    font-size: 15px;
     transition: all 1.5s ease-in-out;
     display: flex;
     word-break: break-all;
@@ -324,7 +324,7 @@ body
 
 #trzy.active .tekst-trzy p
 {
-    font-size: 20px;
+    font-size: 15px;
     transition: all 1.5s ease-in-out;
     display: flex;
     word-break: break-all;

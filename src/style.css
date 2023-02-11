@@ -91,6 +91,7 @@ body
     position: absolute;
     flex-wrap: wrap;
     visibility: collapse;
+    width: 100%;
 }
 
 #jeden.active .tekst-jeden
@@ -117,6 +118,7 @@ body
     height: fit-content;
     position: relative;
     visibility: visible;
+    width: 100%;
 }
 
 .zdj-1
@@ -197,6 +199,7 @@ body
     position: absolute;
     flex-wrap: wrap;
     visibility: collapse;
+    width: 100%;
 }
 
 #dwa.active .tekst-dwa
@@ -209,6 +212,7 @@ body
     height: fit-content;
     justify-content: flex-start;
     align-items: normal;
+    width: 100%;
 }
 
 #dwa.active .tekst-dwa p
@@ -303,6 +307,7 @@ body
     position: absolute;
     flex-wrap: wrap;
     visibility: collapse;
+    width: 100%;
 }
 
 #trzy.active .tekst-trzy
@@ -329,7 +334,7 @@ body
     height: fit-content;
     position: relative;
     visibility: visible;
-    width: auto;
+    width: 100%;
 }
 
 .zdj-3

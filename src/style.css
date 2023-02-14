@@ -130,14 +130,25 @@ body
     height: 300px;
 }
 
-.zdj-1 img
+.zdj-1 .zdj1a
 {
     margin-top: 2%;
     width: 30%;
+    height: 100%;
+}
+
+.zdj-1 img
+{
+    width: 100%;
     height: 98%;
     -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
+}
+
+
+.zdj1a:hover {
+    cursor: zoom-in;
 }
 
 #dwa
@@ -229,6 +240,18 @@ body
     visibility: visible;
 }
 
+.zdj-2 .zdj2a
+{
+    margin-top: 2%;
+    width: 30%;
+    height: 100%;
+}
+
+.zdj2a:hover
+{
+    cursor: zoom-in;
+}
+
 .zdj-2
 {
     display: flex;
@@ -240,8 +263,7 @@ body
 
 .zdj-2 img
 {
-    margin-top: 2%;
-    width: 30%;
+    width: 100%;
     height: 98%;
     -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
@@ -348,12 +370,23 @@ body
 
 .zdj-3 img
 {
-    margin-top: 2%;
-    width: 30%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 1);
+}
+
+.zdj-3 .zdj3a
+{
+    margin-top: 2%;
+    width: 30%;
+    height: 98%;
+}
+
+.zdj3a:hover
+{
+    cursor: zoom-in;
 }
 
 .dol

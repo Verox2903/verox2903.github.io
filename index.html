@@ -52,11 +52,32 @@
                 </p>
             </div>
             <div class="zdj-1">
-                <img src="src/zdj1_fin.jpg">
-                <img src="src/zdj2_fin.jpg">
-                <img src="src/zdj3_fin.jpg">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        let backgroundCanvas = document.createElement("div");
+                        backgroundCanvas.style.cssText = "position: fixed; top: 50%; left: 50%; width: 0; height: 0; z-index: 1; \
+                        background: rgba(0,0,0,0.9) none center/contain no-repeat; transition: all .8s ease-out; cursor: zoom-out;";
+                        document.body.appendChild(backgroundCanvas);
+                        backgroundCanvas.onclick = function() { 
+                            backgroundCanvas.style.inset = "50% auto auto 50%";
+                            backgroundCanvas.style.width = "0";
+                            backgroundCanvas.style.height = "0";
+                        };
+
+                        let zoomInImgLinks = document.getElementsByClassName("zdj1a");
+                        for(var i=0; i<zoomInImgLinks.length; ++i) zoomInImgLinks[i].addEventListener("click", function(e) {
+                            e.preventDefault();
+                            backgroundCanvas.style.backgroundImage = "url('"+e.target.parentNode.href+"')";
+                            backgroundCanvas.style.inset = "0 auto auto 0";
+                            backgroundCanvas.style.width = "100%";
+                            backgroundCanvas.style.height = "100%";
+                        })
+                    })
+                </script>
+                <a class="zdj1a" href="src/zdj1_fin.jpg"><img src="src/zdj1_fin.jpg"></a>
+                <a class="zdj1a" href="src/zdj2_fin.jpg"><img src="src/zdj2_fin.jpg"></a>
+                <a class="zdj1a" href="src/zdj2_fin.jpg"><img src="src/zdj3_fin.jpg"></a>
             </div>
-        </div>
         <div id="dwa">
             <div class="tytul-dwa">
                 <p class="tytul-dwa-txt">Botswana in Africa</p>&nbsp;<button id="button2">➯</button>
@@ -77,10 +98,31 @@
                 from As for activities, you can trek through beautiful teak forests, go on guided animal watching tours at night.<br>
                 </p>
             </div>
-            <div class="zdj-2">
-                <img src="src/zdj1_afr.jpg">
-                <img src="src/zdj2_afr.jpg">
-                <img src="src/zdj3_afr.jpg">
+             <div class="zdj-2">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        let backgroundCanvas = document.createElement("div");
+                        backgroundCanvas.style.cssText = "position: fixed; top: 50%; left: 50%; width: 0; height: 0; z-index: 1; \
+                        background: rgba(0,0,0,0.9) none center/contain no-repeat; transition: all .8s ease-out; cursor: zoom-out;";
+                        document.body.appendChild(backgroundCanvas);
+                        backgroundCanvas.onclick = function() { 
+                            backgroundCanvas.style.inset = "50% auto auto 50%"; 
+                            backgroundCanvas.style.width = "0";
+                            backgroundCanvas.style.height = "0";
+                        };
+                        let zoomInImgLinks = document.getElementsByClassName("zdj2a");
+                        for(var i=0; i<zoomInImgLinks.length; ++i) zoomInImgLinks[i].addEventListener("click", function(e) {
+                            e.preventDefault();
+                            backgroundCanvas.style.backgroundImage = "url('"+e.target.parentNode.href+"')";
+                            backgroundCanvas.style.inset = "0 auto auto 0";
+                            backgroundCanvas.style.width = "100%";
+                            backgroundCanvas.style.height = "100%";
+                        })
+                    })
+                </script>
+                <a class="zdj2a" href="src/zdj1_afr.jpg"><img src="src/zdj1_afr.jpg"></a>
+                <a class="zdj2a" href="src/zdj2_afr.jpg"><img src="src/zdj2_afr.jpg"></a>
+                <a class="zdj2a" href="src/zdj3_afr.jpg"><img src="src/zdj3_afr.jpg"></a>
             </div>
         </div>
         <div id="trzy">
@@ -106,9 +148,30 @@
                 </p>
             </div>
             <div class="zdj-3">
-                <img src="src/zdj1_nor.jpg">
-                <img src="src/zdj2_nor.jpg">
-                <img src="src/zdj3_nor.jpg">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        let backgroundCanvas = document.createElement("div");
+                        backgroundCanvas.style.cssText = "position: fixed; top: 50%; left: 50%; width: 0; height: 0; z-index: 1; \
+                        background: rgba(0,0,0,0.9) none center/contain no-repeat; transition: all .8s ease-out; cursor: zoom-out;";
+                        document.body.appendChild(backgroundCanvas);
+                        backgroundCanvas.onclick = function() { 
+                            backgroundCanvas.style.inset = "50% auto auto 50%"; 
+                            backgroundCanvas.style.width = "0";
+                            backgroundCanvas.style.height = "0";
+                        };
+                        let zoomInImgLinks = document.getElementsByClassName("zdj3a");
+                        for(var i=0; i<zoomInImgLinks.length; ++i) zoomInImgLinks[i].addEventListener("click", function(e) {
+                            e.preventDefault();
+                            backgroundCanvas.style.backgroundImage = "url('"+e.target.parentNode.href+"')";
+                            backgroundCanvas.style.inset = "0 auto auto 0";
+                            backgroundCanvas.style.width = "100%";
+                            backgroundCanvas.style.height = "100%";
+                        })
+                    })
+                </script>
+                <a class="zdj3a" href="src/zdj1_nor.jpg"><img src="src/zdj1_nor.jpg"></a>
+                <a class="zdj3a" href="src/zdj2_nor.jpg"><img src="src/zdj2_nor.jpg"></a>
+                <a class="zdj3a" href="src/zdj3_nor.jpg"><img src="src/zdj3_nor.jpg"></a>
             </div>
         </div>
 	</div>

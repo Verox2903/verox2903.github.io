@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Otwórz menu">
+                ☰
+            </button>
+            <ul class="menu">
+                <li><a href="../index.html">Strona główna</a></li>
+                <li><a href="rejestracja.html">Rejestracja</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Rejestracja</h1>
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Imię" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Hasło" required>
+            <button type="submit">Zarejestruj</button>
+        </form>
+    </main>
+    <footer class="copyright">
+        <p>© 2024 Twoja Strona. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="../js/auth.js" type="module"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

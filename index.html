@@ -1,165 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="src/style.css">
-		<meta charset="utf-8">
-		<title>Project</title>
-        <link rel="shortcut icon" type="image/icon" href="src/icons8_Plane.ico"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <meta name="keywords" content="Projekt, Szkoła, Angielski"/>
-        <meta name="author" content="Szymon Klotz, Emilia Michałkiewicz, Filip Krzeszewski" />
-        <meta name="copyright" content="Grupa projektowa" />
-    </head>
-    <body>
-        <div class="title1">
-            <p><b>Best places for eco-tourism destinations: </b></p>
-        </div>
-        <div id="jeden">
-            <div class="tytul-jeden">
-                <p class="tytul-jeden-txt">Finland</p>&nbsp;<button id="button1">➯</button>
-                    <script>
-                        const button1 = document.querySelector('#button1');
-                        const toggle1 = document.getElementById('jeden');
-                        button1.onclick = function(){
-                            toggle1.classList.toggle('active');
-                            button1.classList.toggle('active');
-                        }
-                    </script>
-            </div>
-            <div class="tekst-jeden">
-                    In the north of Finland, the Wild Taiga region protects amazing wildlife, including brown bears, rarely seen in Europe.<br>
-                    From April to September, the area is teeming with life; not only bears, but also wolves, moose, reindeer, foxes,<br>
-                    beavers and many other creatures are found here. In order to make it possible to view these animals without disturbing their ecosystem,<br>
-                    the "Wild Taiga" tourist association was established.<br>
-                    All lodging and transportation remains locally owned, and tour guides are trained in responsible and sustainable tourism.<br>
-                    So you can explore the taiga and learn about its inhabitants, knowing that you are not affecting the environment or the happiness of wild animals.<br>
-            </div>
-            <div class="zdj-1">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        let backgroundCanvas = document.createElement("div");
-                        backgroundCanvas.style.cssText = "position: fixed; top: 50%; left: 50%; width: 0; height: 0; z-index: 1; \
-                        background: rgba(0,0,0,0.9) none center/contain no-repeat; transition: all .8s ease-out; cursor: zoom-out;";
-                        document.body.appendChild(backgroundCanvas);
-                        backgroundCanvas.onclick = function() { 
-                            backgroundCanvas.style.inset = "50% auto auto 50%";
-                            backgroundCanvas.style.width = "0";
-                            backgroundCanvas.style.height = "0";
-                        };
-
-                        let zoomInImgLinks = document.getElementsByClassName("zdj1a");
-                        for(var i=0; i<zoomInImgLinks.length; ++i) zoomInImgLinks[i].addEventListener("click", function(e) {
-                            e.preventDefault();
-                            backgroundCanvas.style.backgroundImage = "url('"+e.target.parentNode.href+"')";
-                            backgroundCanvas.style.inset = "0 auto auto 0";
-                            backgroundCanvas.style.width = "100%";
-                            backgroundCanvas.style.height = "100%";
-                        })
-                    })
-                </script>
-                <a class="zdj1a" href="src/zdj1_fin.jpg"><img src="src/zdj1_fin.jpg"></a>
-                <a class="zdj1a" href="src/zdj2_fin.jpg"><img src="src/zdj2_fin.jpg"></a>
-                <a class="zdj1a" href="src/zdj3_fin.jpg"><img src="src/zdj3_fin.jpg"></a>
-            </div>
-        </div>
-        <div id="dwa">
-            <div class="tytul-dwa">
-                <p class="tytul-dwa-txt">Africa</p>&nbsp;<button id="button2">➯</button>
-                    <script>
-                        const button2 = document.querySelector('#button2');
-                        const toggle2 = document.getElementById('dwa');
-                        button2.onclick = function(){
-                            toggle2.classList.toggle('active');
-                            button2.classList.toggle('active');
-                        }
-                    </script>
-            </div>
-            <div class="tekst-dwa">
-                Botswana's Okavango Delta National Park is an excellent choice for both those who want a little luxury and those who want to fully commune with nature.<br>
-                In addition to the luxurious eco-resorts scattered throughout the region, you can also simply take a tent and sleep under the stars.<br>
-                Eco-resorts offer lodges where you can live in luxury without remorse: Botswana's ecotourism certification system ensures that they are run in a sustainable manner,<br>
-                from As for activities, you can trek through beautiful teak forests, go on guided animal watching tours at night.<br>
-            </div>
-            <div class="zdj-2">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        let backgroundCanvas = document.createElement("div");
-                        backgroundCanvas.style.cssText = "position: fixed; top: 50%; left: 50%; width: 0; height: 0; z-index: 1; \
-                        background: rgba(0,0,0,0.9) none center/contain no-repeat; transition: all .8s ease-out; cursor: zoom-out;";
-                        document.body.appendChild(backgroundCanvas);
-                        backgroundCanvas.onclick = function() { 
-                            backgroundCanvas.style.inset = "50% auto auto 50%"; 
-                            backgroundCanvas.style.width = "0";
-                            backgroundCanvas.style.height = "0";
-                        };
-                        let zoomInImgLinks = document.getElementsByClassName("zdj2a");
-                        for(var i=0; i<zoomInImgLinks.length; ++i) zoomInImgLinks[i].addEventListener("click", function(e) {
-                            e.preventDefault();
-                            backgroundCanvas.style.backgroundImage = "url('"+e.target.parentNode.href+"')";
-                            backgroundCanvas.style.inset = "0 auto auto 0";
-                            backgroundCanvas.style.width = "100%";
-                            backgroundCanvas.style.height = "100%";
-                        })
-                    })
-                </script>
-                <a class="zdj2a" href="src/zdj1_afr.jpg"><img src="src/zdj1_afr.jpg"></a>
-                <a class="zdj2a" href="src/zdj2_afr.jpg"><img src="src/zdj2_afr.jpg"></a>
-                <a class="zdj2a" href="src/zdj3_afr.jpg"><img src="src/zdj3_afr.jpg"></a>
-            </div>
-        </div>
-        <div id="trzy">
-            <div class="tytul-trzy">
-                <p class="tytul-trzy-txt">Norway</p>&nbsp;<button id="button3">➯</button>
-                    <script>
-                        const button3 = document.querySelector('#button3');
-                        const toggle3 = document.getElementById('trzy');
-                        button3.onclick = function(){
-                            toggle3.classList.toggle('active');
-                            button3.classList.toggle('active');
-                        }
-                    </script>
-            </div>
-            <div class="tekst-trzy">
-                    One of the best eco-friendly place in Norway is Svart, the first fully ecological and fully self-powered hotel.<br>
-                    There are many eco-friendly accommodations available.<br>
-                    This hotel is one of the  luxurious options, there is something to fit every budget.<br>
-                    This place is rated very high and enjoys a large numbers of visitors. In Svart,<br>
-                    there are plenty of eco-friendly activities to enjoy.<br>
-                    You can join a Arctic Adventure of Norway the trips are planned so as not to harm the local ecosystem.<br>
-            </div>
-            <div class="zdj-3">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        let backgroundCanvas = document.createElement("div");
-                        backgroundCanvas.style.cssText = "position: fixed; top: 50%; left: 50%; width: 0; height: 0; z-index: 1; \
-                        background: rgba(0,0,0,0.9) none center/contain no-repeat; transition: all .8s ease-out; cursor: zoom-out;";
-                        document.body.appendChild(backgroundCanvas);
-                        backgroundCanvas.onclick = function() { 
-                            backgroundCanvas.style.inset = "50% auto auto 50%"; 
-                            backgroundCanvas.style.width = "0";
-                            backgroundCanvas.style.height = "0";
-                        };
-                        let zoomInImgLinks = document.getElementsByClassName("zdj3a");
-                        for(var i=0; i<zoomInImgLinks.length; ++i) zoomInImgLinks[i].addEventListener("click", function(e) {
-                            e.preventDefault();
-                            backgroundCanvas.style.backgroundImage = "url('"+e.target.parentNode.href+"')";
-                            backgroundCanvas.style.inset = "0 auto auto 0";
-                            backgroundCanvas.style.width = "100%";
-                            backgroundCanvas.style.height = "100%";
-                        })
-                    })
-                </script>
-                <a class="zdj3a" href="src/zdj1_nor.jpg"><img src="src/zdj1_nor.jpg"></a>
-                <a class="zdj3a" href="src/zdj2_nor.jpg"><img src="src/zdj2_nor.jpg"></a>
-                <a class="zdj3a" href="src/zdj3_nor.jpg"><img src="src/zdj3_nor.jpg"></a>
-            </div>
-        </div>
-        <div class="dol">
-        </div>
-    </body>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giziu - Strona Główna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <html lang="pl">
+	<meta charset="utf-8">
+    <meta name="keywords" content="plan treningowy, trening personalny"/>
+    <meta name="author" content="Gabriel Giżewski, Szymon Klotz" />
+    <meta name="copyright" content="Gabriel Giżewski, Szymon Klotz" />
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Otwórz menu">
+                ☰
+            </button>
+            <ul class="menu">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="sites/o-mnie.html">O mnie</a></li>
+                <li><a href="sites/wspolpraca.html">Współpraca</a></li>
+                <li><a href="sites/plany-treningowe.html">Indywidualne Plany Treningowe</a></li>
+                <li><a href="sites/certyfikaty.html">Certyfikaty</a></li>
+                <li><a href="sites/kontakt.html">Kontakt</a></li>
+                <li><a href="sites/opinie.html">Opinie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Witaj na mojej stronie!</h1>
+            <p>Pomagam w osiąganiu Twoich celów treningowych.</p>
+        </section>
+    </main>
+    <footer class="copyright">
+        <p>© 2024 Gabriel Giżewski. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
 </html>

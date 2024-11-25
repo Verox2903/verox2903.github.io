@@ -1,0 +1,149 @@
+/* Podstawowe style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #202124;
+}
+
+.copyright{
+    color: whitesmoke;
+}
+
+header {
+    background: #000140;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #303030;
+    color: white;
+}
+
+main{
+    color: whitesmoke;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Stylizacja menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000140;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Stylizacja nagłówka */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000140;
+    color: white;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .menu {
+        visibility: hidden;
+        flex-direction: column;
+        background-color: #000140;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform-origin: 50% 0;
+        -webkit-transform-origin: 50% 0;
+        transition: 200ms;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 0.5rem;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.active {
+        visibility: visible;
+        display: flex;
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
+}

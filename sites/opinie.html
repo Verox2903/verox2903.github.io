@@ -29,16 +29,15 @@
         </nav>
     </header>
     <main>
-        <h1>Opinie</h1>
-        <form id="opinion-form">
-            <input type="text" id="name" placeholder="Twoje imię" required>
-            <textarea id="opinion" placeholder="Twoja opinia" required></textarea>
-            <button type="submit">Dodaj opinię</button>
-        </form>
-        <section id="opinions-list">
-            <h2>Opinie użytkowników:</h2>
-            <ul></ul>
-        </section>
+            <form id="opinion-form">
+                <h1>Opinie</h1>
+                <textarea id="opinion" placeholder="Twoja opinia" rows="6" required></textarea>
+                <button type="submit" id="add-opinion-button">Dodaj opinię</button>
+            </form>
+            <section id="opinions-list">
+                <h2>Opinie użytkowników:</h2>
+                <ul></ul>
+            </section>
     </main>
     <footer class="copyright">
         <p>© 2024 Gabriel Giżewski. Wszystkie prawa zastrzeżone.</p>
@@ -55,6 +54,61 @@
             <a href="sites-info/bezpieczenstwo.html" target="_blank">Bezpieczeństwo</a>
         </div>
     </footer> 
+    <script type="module">
+        import { auth, db, checkAuthState } from "../js/firebase.js";
+        import { collection, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js";
+
+        // Sprawdzenie, czy użytkownik jest zalogowany
+        checkAuthState();
+
+        // Elementy DOM
+        const addOpinionSection = document.getElementById("opinion-form");
+        const opinieList = document.getElementById("opinions-list");
+
+        // Wyświetlanie opinii z Firestore
+        const displayOpinie = () => {
+            const opinieRef = collection(db, "opinie");
+            onSnapshot(opinieRef, (snapshot) => {
+                opinieList.innerHTML = "";
+                snapshot.forEach((doc) => {
+                    const opiniaDiv = document.createElement("div");
+                    opiniaDiv.textContent = doc.data().content;
+                    opinieList.appendChild(opiniaDiv);
+                });
+            });
+        };
+
+        // Dodawanie opinii
+        document.getElementById("add-opinion-button").addEventListener("click", async () => {
+            const content = document.getElementById("opinion").value;
+            if (content.trim() === "") {
+                alert("Opinia nie może być pusta!");
+                return;
+            }
+
+            try {
+                await addDoc(collection(db, "opinie"), {
+                    content,
+                    userId: auth.currentUser.uid,
+                    timestamp: new Date()
+                });
+                alert("Opinia dodana!");
+                document.getElementById("opinion").value = "";
+            } catch (error) {
+                alert(`Błąd dodawania opinii: ${error.message}`);
+            }
+        });
+
+        // Wyświetlanie opinii i odblokowanie formularza dla zalogowanych użytkowników
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                addOpinionSection.classList.remove("hidden");
+                displayOpinie();
+            } else {
+                addOpinionSection.classList.add("hidden");
+            }
+        });
+    </script>
     <script src="../js/script.js"></script>
     <script src="../js/menu.js"></script>
 </body>

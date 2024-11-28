@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #202124;
+    background-color: #282828;
 }
 
 .copyright{
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #000140;
+    background: #282828;
     color: white;
     padding: 1rem 0;
 }
@@ -75,13 +75,17 @@ nav {
     font-size: 1rem;
 }
 
+.menu li a:hover{
+    color: rgb(196, 196, 196);
+}
+
 /* Stylizacja nagłówka */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #000140;
+    background-color: #282828;
     color: white;
     position: relative;
 }
@@ -115,7 +119,7 @@ nav {
     .menu {
         visibility: hidden;
         flex-direction: column;
-        background-color: #000140;
+        background-color: #222222;
         position: absolute;
         top: 100%;
         left: 0;
@@ -149,6 +153,7 @@ nav {
 }
 
 .cookie-banner {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -163,6 +168,10 @@ nav {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.cookie-banner.active {
+    display: flex; /* Wyświetl baner, gdy ma klasę active */
+  }
+
 .cookie-banner p {
     margin: 0;
     font-size: 0.9rem;
@@ -171,6 +180,11 @@ nav {
 .cookie-banner a {
     color: #1abc9c;
     text-decoration: underline;
+}
+
+.cookie-buttons{
+    width: fit-content;
+    height: 100%;
 }
 
 .cookie-banner button {
@@ -185,6 +199,15 @@ nav {
 
 .cookie-banner button:hover {
     background-color: #16a085;
+}
+
+
+#reject-cookies {
+    background-color: #dc3545;
+}
+  
+#reject-cookies:hover {
+    background-color: #a71d2a;
 }
 
 /* Struktura dla sticky footer */
@@ -207,7 +230,7 @@ footer {
     text-align: center;
     padding: 10px 20px;
     font-size: 14px;
-    width: 100%;
+    width: auto;
 }
 
 /* Linki w stopce */
@@ -231,9 +254,148 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .footer-links a {
         font-size: 12px;
         padding: 3px 5px;
     }
+
+    footer {
+        width: auto;
+    }
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    height: 390px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 15px;
+    border: 1px solid #747474;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+.contact-form textarea::placeholder {
+    color: whitesmoke;
+    font-family: Arial;
+}
+
+.contact-form input::placeholder
+{
+    color: whitesmoke;
+    font-family: Arial;
+}
+
+.contact-form button {
+    background-color: #0095F6;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-family: Arial;
+}
+
+.contact-form button:hover {
+    background-color: #1877F2;
+}
+
+.regulamin {
+    margin: auto;
+    background: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+    margin-bottom: 20px;
+  }
+  
+.regulamin h1, .regulamin h2 {
+    color: whitesmoke;
+}
+  
+.regulamin p {
+    margin-bottom: 15px;
+}
+
+.regulamin a{
+    color: rgb(0, 170, 255);
+
+}
+
+.calosc{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.jeden{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dwa{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.instagram-media{
+    display: block;
+    border:0 !important;      
+    border-radius:3px;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+    padding: 0px !important; 
+    margin-top: 10px !important;
+}
+
+.jeden-napis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dwa-napis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
 }

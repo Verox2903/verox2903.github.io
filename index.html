@@ -10,6 +10,14 @@
     <meta name="keywords" content="plan treningowy, trening personalny"/>
     <meta name="author" content="Gabriel Giżewski, Szymon Klotz" />
     <meta name="copyright" content="Gabriel Giżewski, Szymon Klotz" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM3NZ05CDS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NM3NZ05CDS');
+    </script>
 </head>
 <body>
     <header>
@@ -39,14 +47,14 @@
     </footer>
     <footer>
         <div class="footer-links">
-            <a href="informacje.html" target="_blank">Informacje</a>
-            <a href="regulamin.html" target="_blank">Regulamin Strony</a>
-            <a href="prawa-autorskie.html" target="_blank">Prawa Autorskie</a>
-            <a href="deweloperzy.html" target="_blank">Deweloperzy</a>
-            <a href="warunki.html" target="_blank">Warunki</a>
-            <a href="prywatnosc.html" target="_blank">Prywatność</a>
-            <a href="zasady.html" target="_blank">Zasady</a>
-            <a href="bezpieczenstwo.html" target="_blank">Bezpieczeństwo</a>
+            <a href="sites-info/informacje.html" target="_blank">Informacje</a>
+            <a href="sites-info/regulamin.html" target="_blank">Regulamin Strony</a>
+            <a href="sites-info/prawa-autorskie.html" target="_blank">Prawa Autorskie</a>
+            <a href="sites-info/deweloperzy.html" target="_blank">Deweloperzy</a>
+            <a href="sites-info/warunki.html" target="_blank">Warunki</a>
+            <a href="sites-info/prywatnosc.html" target="_blank">Prywatność</a>
+            <a href="sites-info/zasady.html" target="_blank">Zasady</a>
+            <a href="sites-info/bezpieczenstwo.html" target="_blank">Bezpieczeństwo</a>
         </div>
     </footer>    
     <div class="cookie-banner" id="cookieBanner">
@@ -54,7 +62,10 @@
             Ta strona używa plików cookies, aby zapewnić najlepsze doświadczenia na stronie. 
             <a href="polityka-cookies.html">Dowiedz się więcej</a>.
         </p>
+        <div class="cookie-buttons">
         <button id="acceptCookies">Akceptuję</button>
+        <button id="reject-cookies">Odrzucam</button>
+        </div>
     </div>    
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
